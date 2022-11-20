@@ -4,8 +4,7 @@
 session_start();
 
 // uji jika session telah diset atau tidak
-if (empty($SESSION['username']) or empty($_SESSION['password'])) {
-} {
+if (empty($_SESSION['username']) or empty($_SESSION['password'])) {
     echo "<script>
             alert('Maaf, untuk mengakses halaman ini, Anda diharuskan Login terlebih dahulu');
             document.location='index.php';

@@ -17,11 +17,11 @@ $data = mysqli_fetch_array($login);
 
 // Uji jika username dan password ditemukan
 if ($data) {
-    $SESSION['id_user'] = $data['id_user'];
-    $SESSION['username'] = $data['username'];
-    $SESSION['password'] = $data['password'];
-    $SESSION['nama_pengguna'] = $data['nama_pengguna'];
-    //$SESSION['status'] = $data['status'];
+    $_SESSION['id_user'] = $data['id_user'];
+    $_SESSION['username'] = $data['username'];
+    $_SESSION['password'] = $data['password'];
+    $_SESSION['nama_pengguna'] = $data['nama_pengguna'];
+    //$_SESSION['status'] = $data['status'];
 
     // arahkan ke halaman admin
     header('location:admin.php');
